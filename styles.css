@@ -53,9 +53,50 @@ th {
   background-color: #f0f0f0;
 }
 
-@media only screen and (max-width: 400px) {
-  body {
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  form,
+  table,
+  img,
+  a {
+    width: 100%;
+  }
+  th,
+  td {
     font-size: 14px;
-    background-color: black;
   }
 }

@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form Example</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <h1>Welcome to my <span style="color: blue">website!</span></h1>
-    <p>This is a paragraph of text.</p>
-    <ol>
-      <li>This is the first item</li>
-      <li>this is the second item</li>
-      <li>this is the third item</li>
-    </ol>
-    <form action="/submit" method="post">
+    <form id="myForm" action="/submit" method="post">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required />
       <br />
@@ -42,20 +37,6 @@
     <button id="count-button">Click me!</button>
     <p id="count-display">Count: 0</p>
 
-    <script>
-      let count = 0;
-      const button = document.querySelector("#count-button");
-      const display = document.querySelector("#count-display");
-      button.addEventListener("click", () => {
-        count++;
-        display.textContent = `Count: ${count}`;
-        if (count > 10) {
-          alert("You've clicked the button 10 times!");
-        } else if (count > 5) {
-          alert("You've clicked the button 5 times!");
-        }
-        
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

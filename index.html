@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Web Page</title>
+  </head>
+  <body>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <h1>Welcome to my <span style="color: blue">website!</span></h1>
+    <p>This is a paragraph of text.</p>
+    <ol>
+      <li>This is the first item</li>
+      <li>this is the second item</li>
+      <li>this is the third item</li>
+    </ol>
+    <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>25</td>
+      </tr>
+    </table>
+    <img src="https://via.placeholder.com/200x200" alt="A placeholder image" />
+    <a href="https://www.example.com">Visit Example.com</a>
+    <h2>A subheading</h2>
+    <p>This is another paragraph of text.</p>
+    <button id="count-button">Click me!</button>
+    <p id="count-display">Count: 0</p>
+
+    <script>
+      let count = 0;
+      const button = document.querySelector("#count-button");
+      const display = document.querySelector("#count-display");
+      button.addEventListener("click", () => {
+        count++;
+        display.textContent = `Count: ${count}`;
+        if (count > 10) {
+          alert("You've clicked the button 10 times!");
+        } else if (count > 5) {
+          alert("You've clicked the button 5 times!");
+        }
+        
+      });
+    </script>
+  </body>
+</html>

@@ -3,40 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive Form Example</title>
+    <title>This is my Demo</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <form id="myForm" action="/submit" method="post">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
       <br />
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
       <br />
       <input type="submit" value="Submit" />
     </form>
-    <table>
+    <table id="user-table">
       <tr>
         <th>Name</th>
-        <th>Age</th>
-      </tr>
-      <tr>
-        <td>John Doe</td>
-        <td>30</td>
-      </tr>
-      <tr>
-        <td>Jane Smith</td>
-        <td>25</td>
+        <th>Email</th>
       </tr>
     </table>
-    <img src="https://via.placeholder.com/200x200" alt="A placeholder image" />
-    <a href="https://www.example.com">Visit Example.com</a>
-    <h2>A subheading</h2>
-    <p>This is another paragraph of text.</p>
     <button id="count-button">Click me!</button>
     <p id="count-display">Count: 0</p>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
